@@ -1,0 +1,48 @@
+@@
+1. BASIC CONDITION
+
+if 6 > 5:                                   <---- NOTE THE COLON AFTER THE BOOLEAN EXPRESSION
+    print("Six is creater than five")
+                                            <----- NOTE THE EMPTY LINE: IT MARKS THE END OF THE IF BLOCK
+
+The indenting is very important.
+
+@@
+2. IF-ELSE
+
+if sister > brother:
+    print("Sister is older")                <---- NO EMPTY LINE AT THE END OF IF BLOCK!
+else:
+    print("Brother is older")
+                                            <---- EMPTY LINE
+
+
+@@
+3. IF-ELIF-ELSE
+
+if sister > brother:
+    print("Sister is older")
+elif sister == brother:
+    print("Sister is the same age as brother")
+else:
+    print("Brother is older")
+
+
+We can have as many 'elif''s as we want.
+
+
+@@
+4. COMPOUND BOOLEAN EXPRESSIONS
+
+AND:
+
+>>> x = 1
+>>> x > 0 and x < 2
+True
+
+OR:
+
+>>> "a" in "Hello" or "e" in "Hello"
+True
+
+

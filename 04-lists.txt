@@ -1,0 +1,88 @@
+@@
+1. BASICS
+
+Define a list
+
+>>> your_list = ["a", "b", "c"]
+
+Display items in the list
+
+>>> your_list
+['a', 'b', 'c']
+
+Display the type of the list
+
+>>> type(your_list)
+<type 'list'>
+
+[] denotes an empty list
+
+>>> her_list = []
+>>> len(her_list)
+0
+
+
+@@
+2. LENGTH OF A LIST
+
+Use the len() function to return the number of items in the list, similar to strings.
+
+>>> len(your_list)
+3
+
+@@
+3. CONTAINMENT IN A LIST
+
+Use 'in' or 'not in' to test if a list contains (doesn't contain) an item. Again, this is similar to strings.
+
+>>> "a" in your_list
+True
+
+>>> "z" in your_list
+False
+
+@@
+4. REFERENCING ITEMS IN A LIST
+
+List indexes in Python are zero-based.
+
+>>> your_list[0]
+'a'
+>>> your_list[1]
+'b'
+>>> your_list[2]
+'c'
+>>> your_list[3]
+Traceback (most recent call last):          <---- Referencing an item beyond the length of the list
+  File "<stdin>", line 1, in <module>
+  IndexError: list index out of range
+
+@@
+5. APPEND
+
+>>> your_list.append("d")
+>>> your_list
+['a', 'b', 'c', 'd']
+
+>>> len(your_list)
+4
+
+
+@@
+6. REFERENCING ITEMS AT THE END OF A LIST
+
+Negative numbers denote items at the end of the list.
+
+The last item is referred by -1, the last but one item by -2, and so on:
+
+>>> your_list
+['a', 'b', 'c', 'd']
+>>> your_list[-1]
+'d'
+>>> your_list[-2]
+'c'
+
+@@
+7. The same syntax and semantics apply to strings (including negative indexes)
+
+

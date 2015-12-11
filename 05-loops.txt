@@ -1,0 +1,16 @@
+@@
+1. BASIC FOR LOOPS
+
+names = ["Alice", "Bob", "Cassie", "Diane", "Ellen"]
+for name in names:          <---- NAME IS OUR CONTROL VARIABLE
+    print(name)
+                            <---- NOTE THE EMPTY STRING
+
+
+Alice
+Bob
+Cassie
+Diane
+Ellen
+
+
