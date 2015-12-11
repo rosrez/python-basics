@@ -13,4 +13,46 @@ Cassie
 Diane
 Ellen
 
+@@
+2. NESTED BLOCKS WITHIN A LOOP
+
+@@
+EXAMPLE 1.
+
+Given the list,
+
+>>> names
+['Alice', 'Bob', 'Cassie', 'Diane', 'Ellen']
+
+select the names that start with a vowel
+
+>>> for name in names:
+...     if name[0] in ["A", "E", "O", "I", "U"]:        <--- CREATES A LIST IN-PLACE
+...             print(name)
+...                                                     <--- TERMINATES THE LOOP AND THE IF CONDITION
+Alice
+Ellen
+
+Or, we can replace the list of vowels with a string that contains all of the vowels:
+
+>>> 
+>>> for name in names:
+...     if name[0] in "AEOIU":
+...             print(name)
+... 
+Alice
+Ellen
+
+@@
+EXAMPLE 2.
+
+Given the same list of names, we want to create a list that contains all names from 'names' that contains the names the start with values.
+
+>>> vowel_names = []
+>>> for name in names:
+...     if name[0] in "AEOIU":
+...             vowel_names.append(name)
+... 
+>>> vowel_names
+
 
