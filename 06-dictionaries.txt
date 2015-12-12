@@ -1,0 +1,46 @@
+@@
+1. SYNTAX
+
+ice_cream = {"Alice": "chocolate", "Bob": "strawberry", "Cara": "mint chocolate chip"}
+
+@@
+2. ORDER IS NOT PRESERVED BECAUSE IT IS NOT RELEVANT FOR DICTIONARIES
+
+If we try to display the same dictionary, we see that the order in which Python displays it is different from the initial order.
+
+>>> ice_cream
+{'Bob': 'strawberry', 'Cara': 'mint chocolate chip', 'Alice': 'chocolate', 'Eve': 'rum raisin'}
+
+@@
+3. KEYS IN A DICTIONARY MUST BE UNIQUE
+
+@@
+3. GETTING VALUES FOR KEYS
+
+>>> ice_cream["Alice"]
+'chocolate'
+
+>>> ice_cream["Bob"]
+'strawberry'
+
+>>> ice_cream["Eve"]                        <----- NON-EXISTING KEY
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  KeyError: 'Eve'
+
+@@
+3. ADDING ITEMS TO A DICTIONARY
+
+Adding a value for non-existing key
+
+>>> ice_cream["Eve"] = "rum raisin"
+
+>>> ice_cream["Eve"]
+'rum raisin'
+
+Changing a value for an existing key (uses the same 'assignment' syntax):
+
+>>> ice_cream["Bob"] = "vanilla"
+>>> ice_cream["Bob"]
+'vanilla'
+

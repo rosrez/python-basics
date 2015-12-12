@@ -1,0 +1,33 @@
+@@
+1. SYNTAX: USING MODULES
+
+First, we have to import a module
+
+>>> import random
+
+Invoking the randint() function from the 'random' module.
+
+>>> random.randint(1,6)
+6
+>>> random.randint(1,6)
+2
+>>> random.randint(1,6)
+5
+
+Another example, calling random.choice() to pick a random item from a list.
+
+>>> cards = ["jack", "queen", "king", "ace"]
+
+>>> random.choice(cards)
+'jack'
+>>> random.choice(cards)
+'jack'
+>>> random.choice(cards)
+'jack'
+>>> random.choice(cards)
+'king'
+>>> random.choice(cards)
+'king'
+>>> random.choice(cards)
+'queen'
+

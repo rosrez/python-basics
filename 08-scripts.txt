@@ -1,0 +1,16 @@
+@@
+1. STRINGS IN PYTHON SCRIPTS
+
+Newlines are referred to as:
+
+\n
+
+@@
+2. PRINT IMPLICITLY ENDS OUTPUT WITH A NEWLINE
+
+We can use print("") to print a newline (like echo in a shell).
+
+@@
+3. TRIPLE QUOTES
+
+All text within triple quoted string is printed literally, including newlines, tabs, etc.
