@@ -1,0 +1,47 @@
+@@
+1. READING FROM A TEST FILE
+
+open("countries2.txt", "r")
+
+countries = []
+
+for line in f:              # iterate through every line in the file
+    line = line.strip()     # strip trailing whitespace
+    countries.append(line)
+
+f.close()
+
+@@
+2. WRITING TO A FILE
+
+f = open("scores.out", "w")
+
+while True:
+    participant = input("Participant name> ")
+    if participant == "":
+        break
+
+    score = input("Score for " + participant + "> ")
+
+    f.write(participant + "," + score + "\n")           # the write() method
+
+f.close()
+
+@@
+3. READING INPUT
+
+We can chain calls to string handling functions, like in this example:
+
+f = open("scores.out", "r")
+
+participants = {}                        # an empty dictionary
+for line in f:
+    entry = line.strip().split(",")     # strip() & split() chained: split() produces a list of items delimited with ,
+    participant = entry[0];
+    score = entry[1]
+    participants[participant] = score   # populate the dictionary
+    print(participant + ": " + score)   # print an entry at a time
+
+f.close()
+print(participants)     # print the dictionary as a whole
+

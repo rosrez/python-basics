@@ -1,4 +1,4 @@
-#!/bin/python
+#!/bin/python2
 
 capitals_dict = {
 'Alabama': 'Montgomery',
@@ -46,9 +46,11 @@ states = list(capitals_dict.keys())
 for i in [1, 2, 3, 4, 5]:
     state = random.choice(states)
     capital = capitals_dict[state]
-    capital_guess = input("What is the capital of " + state + "? ")
+    capital_guess = input("What is the capital of " + state + "? ") # use raw_input() in python 2
 
-    if capital_guess == capital:
+    if capital_guess == "":
+        break
+    elif capital_guess == capital:
         print("Correct! Nice job.")
     else:
         print("Incorrect. The capital of " + state + " is " + capital + ".")

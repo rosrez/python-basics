@@ -55,4 +55,11 @@ Given the same list of names, we want to create a list that contains all names f
 ... 
 >>> vowel_names
 
+@@
+3. WHILE LOOP
+
+while condition:
+    ... body
+                <---- EMPTY LINE TO TERMINATE THE LOOP
+
 
