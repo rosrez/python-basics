@@ -1,0 +1,10 @@
+@@
+1. COMMAND LINE ARGUMENTS ARE STORED IN:
+
+sys.argv
+
+sys.argv requires that we import the 'sys' module, like this:
+
+flashcard_filename = sys.argv[1]
+
+

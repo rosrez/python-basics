@@ -1,0 +1,64 @@
+@@
+1. BASIC SYNTAX.
+
+We define functions like this:
+
+>>> def greeting():
+...     print("Hello")
+... 
+
+We invoke a function like this:
+
+>>> greeting()
+Hello
+
+We specify arguments in a function definition like this:
+
+>>> def greeting(name):
+...     print("Hello " + name)
+... 
+
+We supply arguments to a function like this:
+
+>>> greeting("Oleg")
+Hello Oleg
+
+EXAMPLE - SUM OF NUMBERS IN A LIST
+
+>>> def sum(numbers):
+...     total = 0
+...     for number in numbers:
+...         total += number
+...     return total                <--- RETURN THE RESULT
+...                                 <--- STILL NEED AN EMPTY LINE TO TERMINATE THE FUNCTION BODY
+
+>>> sum(prices)
+33.69
+
+EXAMPLE - CHECK IF A WORD STARTS WITH A VOWEL
+
+>>> def starts_with_a_vowel(word):
+...     return word[0] in "AEIOU"
+... 
+
+>>> starts_with_a_vowel("Alice")
+True
+>>> starts_with_a_vowel("Max")
+False
+
+EXAMPLE - RETURN WORDS IN A LIST THAT START WITH A VOWEL (BUILDS ON THE PREVIOUS FUNCTION):
+
+>>> def vowel_words(word_list):
+...     vwords = []
+...     for word in word_list:
+...         if starts_with_a_vowel(word):
+...             vwords.append(word)
+...     return vwords
+... 
+
+>>> names = ["Alice", "Bob", "Cara", "Dan", "Edith"]
+
+>>> vowel_words(names)
+['Alice', 'Edith']
+
+
