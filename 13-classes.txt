@@ -1,0 +1,38 @@
+@@
+1. BASIC CLASS SYNTAX
+
+Note the explicit mention of the 'self' pointer in class code
+
+class Greeter(object):
+    def __init__(self, name):       # THE CONSTRUCTOR
+        self.name = name            # Assign to a FIELD self.name
+
+    def hello(self):
+        print("Hello " + self.name)
+
+    def goodbye(self):
+        print("Goodbye " + self.name)
+
+We don't need 'self' when we use the class
+
+ga = Greeter("Adam")
+ga.hello()
+ga.goodbye()
+
+@@
+2. CONSTRUCTORS
+
+class Die(object):
+    def __init__(self, sides):          # THE SIDES OF A DIE, A PARAMETER
+        self.sides = sides              # ASSIGN TO A CLASS FIELD, THE FIELD IS PREFIXED WITH self.
+
+    def roll(self):
+        return random.randint(1, self.sides)
+
+print("Die 6 rolls")
+d = Die(6)                              # CONSTRUCTOR INVOCATION
+print(d.roll())
+print(d.roll())
+print(d.roll())
+
+
